@@ -1,14 +1,10 @@
-name: Test React App
-on: 
-  pull_request:
-    types:
-      - opened
+name: Deploy React App
+permissions:
+  contents: write
+on:
   workflow_dispatch:
-  push:    
-    branches:
-      - main 
 jobs: 
-  test:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Code
@@ -19,5 +15,11 @@ jobs:
           node-version: 22
       - name: Install
         run: npm install
-      - name: Test
-        run: npm run test
+      - name: Build
+        run: npm run build
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build 
+          branch: gh-pages
+        
