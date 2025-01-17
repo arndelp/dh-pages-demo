@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "./static/css/main.18cf9551.css",
+    "main.js": "./static/js/main.8c64c96a.js",
+    "static/media/pexels-wendywei-1190298.jpg": "./static/media/pexels-wendywei-1190298.9f73956ba2257824c655.jpg",
+    "static/media/27104127-applaudissement-foule-illumine-par-vibrant-etape-lumieres-a-concert-photo.jpg": "./static/media/27104127-applaudissement-foule-illumine-par-vibrant-etape-lumieres-a-concert-photo.e142dd9b0b955deaffb9.jpg",
+    "index.html": "./index.html",
+    "main.18cf9551.css.map": "./static/css/main.18cf9551.css.map",
+    "main.8c64c96a.js.map": "./static/js/main.8c64c96a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.18cf9551.css",
+    "static/js/main.8c64c96a.js"
+  ]
+}
