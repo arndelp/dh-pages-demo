@@ -6,7 +6,7 @@ env:
 jobs:
   vars:
     name: echo Vars
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Print result
         env:
