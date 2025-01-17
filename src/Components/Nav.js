@@ -4,7 +4,7 @@ import {useState} from "react";
 import { Link } from "react-router-dom";
 
 
-{/*Fonction l'affichage des liens vers les autres pages dans le header//Burger pour la version mobile */}
+/*Fonction l'affichage des liens vers les autres pages dans le header//Burger pour la version mobile */
 
 function Nav() {
 
@@ -65,7 +65,7 @@ function Nav() {
                             
                             <button type="button" class="Burger btn btn-default " onClick={handleShowLinks}>
                                 
-                                <img src='../assets/burger.png'></img>
+                                <img src='../assets/burger.png' alt="burger"></img>
                                 
                             </button>
                             

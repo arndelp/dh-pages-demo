@@ -57,9 +57,7 @@ function MyForm() {
           </label>
       
         
-          <label class="row field">message:
-          <textarea value={textarea} onChange={handleChange} />   
-          </label>
+          
           
 
           <input type="submit" />

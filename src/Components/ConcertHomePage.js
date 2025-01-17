@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import "./../style/Programme.css";
 
 
-{/*Function permettant l'affichage des premiers concerts du festival D1S1=Day1 Schedule1*/}
+/*Function permettant l'affichage des premiers concerts du festival D1S1=Day1 Schedule1*/
 
 export default function ConcertHomePage() {
 
-  {/*concerts est initialement vide*/}
+  /*concerts est initialement vide*/
   const [concerts, setConcerts] = useState([])
-{/*envoi une requête et récupération des données dans 'dataConcerts.json' puis les stockent dans concerts avec setConcerts*/}
+/*envoi une requête et récupération des données dans 'dataConcerts.json' puis les stockent dans concerts avec setConcerts*/
   useEffect(()=>{
     fetch('dataConcerts.json')
     .then((response)=>response.json())
@@ -19,12 +19,13 @@ export default function ConcertHomePage() {
 
 
 
-  {/*on met dans Val les concerts ayant la date et l'horaire  */}
+  /*on met dans Val les concerts ayant la date et l'horaire  */
   const day1sch1 = concerts.filter(Val =>
     Val.day === "09/07/2027" && Val.schedule === "18:00 - 19:00");  
 
 
-{/*on liste le contenu de Val */}
+/*on liste le contenu de Val */
+/*Appelle de la fonction gerImageUrl pour récupérer l'image */
   const listDay1Sch1 = day1sch1.map(Val =>
     <li key={Val.id}>
       
@@ -32,7 +33,7 @@ export default function ConcertHomePage() {
         <div className="row g-0">
           <div className="col-5  ">
        
-            {/*Appelle de la fonction gerImageUrl pour récupérer l'image */}
+            
             <img
               src={`../assets/${Val.imageId}.jpg`}     
               alt={Val.name}  
@@ -58,7 +59,7 @@ export default function ConcertHomePage() {
   );
 
 
- {/*Affichage de la liste + lien vers Programmation */}
+ /*Affichage de la liste + lien vers Programmation */
 
 return ( 
 
