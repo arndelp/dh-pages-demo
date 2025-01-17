@@ -4,9 +4,7 @@ import "../style/Contact.css"
 function MyForm() {
   const [inputs, setInputs] = useState({});
 
-  const [textarea, setTextarea] = useState(
-    
-  );
+
 
   const handleChange = (event) => {
     const name = event.target.name;
