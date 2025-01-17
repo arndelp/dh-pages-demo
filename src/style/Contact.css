@@ -1,0 +1,28 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--gris); 
+    padding-bottom: 2em;       
+}
+
+.field {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.contacth1 {
+    justify-content: center;
+    text-align: center;
+    background-color: var(--gris);   
+    margin-bottom: 0;
+    padding-top: 0.5em;
+    font-family: Katibeh;
+    font-size: 5em;  
+}
+
+.contenu {
+    block-size: 100vh;
+    background-color: var(--gris); 
+}
+

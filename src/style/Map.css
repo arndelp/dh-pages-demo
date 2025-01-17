@@ -1,0 +1,24 @@
+
+.mapfull {    
+    height: 100vh;
+    }
+
+.checkboxes {
+    display: flex;
+    justify-content: center;
+    padding-right: 0.5em;   
+    background-color: #CEEAD6;   
+  
+}
+.checkbox {
+    padding-inline: 0.5em;       
+  
+}
+
+.mapMini {
+   
+    margin-bottom: 3em;
+    
+}
+
+
